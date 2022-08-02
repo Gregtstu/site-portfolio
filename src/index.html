@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +10,104 @@
     <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" href="./style/media.css">
 </head>
+
 <body>
+    <main>
+        <header class="header">
+            <div class="container">
+                <!-- Логотип и навигация сайта -->
+                <nav class="header__navigotion">
+                    <a href="#!" class="navigotion__logo">Kelvin</a>
+                    <ul class="navigotion__list">
     
+                        <li class="navigotion__item">
+                            <a href="#!" class="navigotion__link active">Home</a>
+                        </li>
+                        <li class="navigotion__item">
+                            <a href="#!" class="navigotion__link">Works</a>
+                        </li>
+                        <li class="navigotion__item">
+                            <a href="#!" class="navigotion__link">Services</a>
+                        </li>
+                        <li class="navigotion__item">
+                            <a href="#!" class="navigotion__link">About</a>
+                        </li>
+                        <li class="navigotion__item">
+                            <a href="#!" class="navigotion__link">Contact</a>
+                        </li>
+    
+                    </ul>
+                </nav>
+                <!-- Основной контент header -->
+                <div class="header__row">
+                    <div class="header__text">
+                        <h1>Kelvin Kramer <br> Designer & Developer</h1>
+                        <p>I`m a portrait, fashion and lifestyle photographer living In New York City. During my thirteen year tenure here.</p>
+                    </div>
+                    <div class="header__img">
+                        <img src="./img/hero.png" alt="аватарка">
+                    </div>
+                </div>
+    
+            </div>
+        </header>
+        <section class="services">
+            <div class="container">
+                <div class="services__row">
+                    <div class="services__card">
+                        <img src="./img/servicves/01.svg" alt="UI/UX Design" class="services__card_img">
+                        <h3 class="services__card_title">UI/UX Design</h3>
+                        <p class="services__card_description">Our design is translated into comprehensive digital environments built on latest development standards.</p>
+                    </div>
+                    <div class="services__card">
+                        <img src="./img/servicves/02.svg" alt="developmen" class="services__card_img">
+                        <h3 class="services__card_title">Development</h3>
+                        <p class="services__card_description">Our design is translated into comprehensive digital environments built on latest development standards.</p>
+                    </div>
+                    <div class="services__card">
+                        <img src="./img/servicves/03.svg" alt="software testing" class="services__card_img">
+                        <h3 class="services__card_title">software testing</h3>
+                        <p class="services__card_description">Our design is translated into comprehensive digital environments built on latest development standards.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio">
+            <div class="container">
+                <h2 class="portfolio__title">Portfolio</h2>
+                <div class="portfolio__project">
+                    <img class="portfolio__project_img" src="./img/porfolio/01.jpg" alt="">
+                    <h3><a class="portfolio__project_description" href="#!">Online fashion store - Homepage</a></h3>
+                </div>
+                <div class="portfolio__project">
+                    <img class="portfolio__project_img" src="./img/porfolio/02.jpg" alt="">
+                    <h3><a class="portfolio__project_description" href="#!">Reebok Store - Concept</a></h3>
+                </div>
+                <div class="portfolio__project">
+                    <img class="portfolio__project_img" src="./img/porfolio/03.jpg" alt="">
+                    <h3><a class="portfolio__project_description" href="#!">Braun Landing Page - Concept</a></h3>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="contacts">
+        <div class="container">
+            <div class="contacts__title">Contacts</div>
+            <p>Want to know more or just chat? 
+                You are welcome!
+            </p>
+            <button class="contacts__btn">Send message</button>
+            <div class="contacts__social">
+                <a href="#!"><img src="./img/social/01.svg" alt=""></a>
+                <a href="#!"><img src="./img/social/02.svg" alt=""></a>
+                <a href="#!"><img src="./img/social/03.svg" alt=""></a>
+                <a href="#!"><img src="./img/social/04.svg" alt=""></a>
+            </div>
+            <h3>Like me on <br> LinkedIn, Instagram, Behance, Dribble</h3>
+
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
 </body>
+
 </html>
