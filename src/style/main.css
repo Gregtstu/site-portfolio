@@ -24,6 +24,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    margin-bottom: 73px;
 }
 .navigotion__logo {                  /* Стили для логотопа */
     text-decoration: none;
