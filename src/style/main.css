@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import "./reset.css";
+@import "./media.css";
 
 body{
     font-family: 'Poppins', sans-serif;
@@ -53,9 +54,14 @@ body{
     justify-content: space-between;
     gap: 50px;
 }
+
+.header__navigotion_button{   /* бургер-меню */
+    display: none;
+}
 .navigotion__item {
     list-style: none;
 }
+
 .navigotion__link {         /* кнопки навигации */
     text-decoration: none;
     font-weight: 500;

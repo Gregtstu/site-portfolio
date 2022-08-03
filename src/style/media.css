@@ -1,0 +1,33 @@
+@media(max-width:1230px){
+
+    .header__navigotion_button{   /* бургер-меню */
+        display: block;
+        z-index: 10;
+        position: fixed;
+        top: 46px;
+        right: 30px;
+    }
+
+    .navigotion__list {         /* кнопки навигации */
+      display: none; 
+    }
+
+    .header__navigotion.open  .navigotion__list {         /* кнопки навигации */
+        display: flex;
+        flex-direction: column;
+        column-gap: 30px;
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 51px;
+        color: #828282;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 30px 46px;
+        z-index: 10;
+        background-color: #fff; 
+      }
+
+}
