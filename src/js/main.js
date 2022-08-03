@@ -9,3 +9,7 @@ navBtn.addEventListener('click', ()=> {
         navBtn.src = "./img/icons/nav-open.svg";
     }
 })
+
+AOS.init({
+    duration: 2200,
+});

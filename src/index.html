@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" href="./style/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -17,8 +18,8 @@
             <div class="container">
                 <!-- Логотип и навигация сайта -->
                 <nav class="header__navigotion">
-                    <a href="#!" class="navigotion__logo">Kelvin</a>
-                    <ul class="navigotion__list">
+                    <a href="#!" class="navigotion__logo" data-aos="fade-right">Kelvin</a>
+                    <ul class="navigotion__list" data-aos="fade-left">
     
                         <li class="navigotion__item">
                             <a href="#!" class="navigotion__link active">Home</a>
@@ -42,12 +43,15 @@
                 </nav>
                 <!-- Основной контент header -->
                 <div class="header__row">
-                    <div class="header__text">
+                    <div class="header__text" data-aos="fade-up">
                         <h1>Kelvin Kramer <br> Designer & Developer</h1>
                         <p>I`m a portrait, fashion and lifestyle photographer living In New York City. During my thirteen year tenure here.</p>
                     </div>
                     <div class="header__img">
-                        <img src="./img/hero.png" alt="аватарка">
+                        <picture data-aos="fade-down-left">
+                            <source media="(max-width: 700px)" srcset="./img/hero2.png">
+                            <img src="./img/hero.png" alt="аватарка">
+                        </picture>
                     </div>
                 </div>
     
@@ -55,7 +59,7 @@
         </header>
         <section class="services">
             <div class="container">
-                <div class="services__row">
+                <div class="services__row" data-aos="fade-down-left">
                     <div class="services__card">
                         <img src="./img/servicves/01.svg" alt="UI/UX Design" class="services__card_img">
                         <h3 class="services__card_title">UI/UX Design</h3>
@@ -77,22 +81,22 @@
         <section class="portfolio">
             <div class="container">
                 <h2 class="portfolio__title">Portfolio</h2>
-                <div class="portfolio__project">
+                <div class="portfolio__project" data-aos="flip-up">
                     <img class="portfolio__project_img" src="./img/porfolio/01.jpg" alt="">
                     <h3><a class="portfolio__project_description" href="#!">Online fashion store - Homepage</a></h3>
                 </div>
-                <div class="portfolio__project">
+                <div class="portfolio__project" data-aos="flip-up">
                     <img class="portfolio__project_img" src="./img/porfolio/02.jpg" alt="">
                     <h3><a class="portfolio__project_description" href="#!">Reebok Store - Concept</a></h3>
                 </div>
-                <div class="portfolio__project">
+                <div class="portfolio__project" data-aos="flip-up">
                     <img class="portfolio__project_img" src="./img/porfolio/03.jpg" alt="">
                     <h3><a class="portfolio__project_description" href="#!">Braun Landing Page - Concept</a></h3>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="contacts"> 
+    <footer class="contacts" data-aos="fade-down-left"> 
         <div class="container">
             <div class="contacts__title">Contacts</div>
             <p>Want to know more or just chat? 
@@ -109,6 +113,8 @@
 
         </div>
     </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/main.js"></script>
 </body>
 
