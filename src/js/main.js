@@ -11,5 +11,5 @@ navBtn.addEventListener('click', ()=> {
 })
 
 AOS.init({
-    duration: 2200,
+    duration: 3000,
 });

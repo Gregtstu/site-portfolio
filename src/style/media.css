@@ -2,7 +2,7 @@
 
     .header__navigotion_button{   /* бургер-меню */
         display: block;
-        z-index: 10;
+        z-index: 100;
         position: fixed;
         top: 46px;
         right: 30px;
@@ -17,16 +17,17 @@
         flex-direction: column;
         column-gap: 30px;
         font-weight: 600;
-        font-size: 34px;
-        line-height: 51px;
+        font-size: 54px;
         color: #828282;
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
+        bottom: 0;
         padding: 30px 46px;
         z-index: 10;
         background-color: #fff; 
+        overflow: auto;
       }
 
       .header__row{
@@ -34,4 +35,65 @@
         flex-direction: column;
       }
 
+}
+
+
+@media(max-width:530px){
+  .header__navigotion{
+    margin-bottom: 10px;
+  }
+
+  .header {
+    padding-top: 10px;
+  }
+    
+  .header__row {
+    padding: 0 15px;
+    display: block;
+    height: 400px;  
+  }
+  .header__text{
+    display: inline-block;
+    height: 10px;
+  }
+
+    .header__text h1 {
+      position: absolute; 
+      right: 25px;
+      top: 150px;
+      width: 40%;
+      line-height:25px;
+      text-align: center;
+      font-weight: 400;
+      font-size:27px;
+      color: #000;    
+  }
+
+  .header__text p{
+    position: relative;
+    width: 100%;
+    top: 250px;
+    z-index: 1;
+    font-weight: 400;
+    color: #000; 
+  }
+
+  .header__img{
+    position: relative; 
+    top: -60px; 
+    margin-top: 0;
+  }
+
+  .header__navigotion_button{   /* бургер-меню */
+    display: block;
+    z-index: 10;
+    position: fixed;
+    top: 20px;
+    right: 30px;
+  }
+
+  .services__row{
+    display: flex;
+    flex-direction: column;
+  }
 }
