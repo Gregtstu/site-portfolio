@@ -3,8 +3,8 @@
     .header__navigotion_button{   /* бургер-меню */
         display: block;
         z-index: 100;
-        position: fixed;
-        top: 46px;
+        position: relative;
+        top: 0px;
         right: 30px;
     }
 
@@ -12,7 +12,7 @@
       display: none; 
     }
 
-    .header__navigotion.open  .navigotion__list {         /* кнопки навигации */
+    .header__navigotion.open  .navigotion__list {       
         display: flex;
         flex-direction: column;
         column-gap: 30px;
@@ -85,15 +85,17 @@
   }
 
   .header__navigotion_button{   /* бургер-меню */
-    display: block;
     z-index: 10;
-    position: fixed;
+    /* position: fixed;
     top: 20px;
-    right: 30px;
+    right: 60px; */
   }
 
   .services__row{
     display: flex;
     flex-direction: column;
+  }
+  .services__card{
+    width: 100%;
   }
 }
